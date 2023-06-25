@@ -19,9 +19,9 @@ export class LoginComponent {
     this.password = ''
   }
 
-  ngOnInit() {
-    this.login();
-  }
+  // ngOnInit() {
+  //   this.login();
+  // }
 
   login() {
     this.getTokenService.login(this.username, this.password).subscribe(
