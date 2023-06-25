@@ -1,0 +1,31 @@
+.container {
+  background-color: #fff;
+  max-width: 70vw;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-top: 50px;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+button {
+  background-image: linear-gradient(to bottom right, dodgerblue, lightskyblue);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+  margin-top: 0;
+  color: #333;
+}

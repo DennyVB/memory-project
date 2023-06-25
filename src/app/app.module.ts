@@ -7,6 +7,7 @@ import { GetdataComponent } from './getdata/getdata.component';
 import { HttpClientModule} from "@angular/common/http";
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { GraphComponent } from './graph/graph.component';
 
 
 
@@ -15,6 +16,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     GetdataComponent,
     LoginComponent,
+    GraphComponent,
   ],
   imports: [
     BrowserModule,

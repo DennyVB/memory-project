@@ -1,0 +1,39 @@
+.graph {
+  width: 20vw;
+  height: 30vw;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: flex-end;
+  padding: 1vw;
+}
+
+.bar {
+  background-color: #3498db;
+  margin-right: 5px;
+  color: #fff;
+  text-align: center;
+  font-size: 1vw;
+  flex: 1;
+  transition: height 0.3s;
+}
+.aantal {
+  width: 20vw;
+  height: 2vw;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: flex-end;
+  padding: 1vw;
+
+
+}
+.block {
+  background-color: #3498db;
+  margin-right: 5px;
+  color: #fff;
+  text-align: center;
+  font-size: 1vw;
+  flex: 1;
+  transition: height 0.3s;
+
+}
+

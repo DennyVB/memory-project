@@ -4,9 +4,7 @@
   <div class ="aantal">Aantal geregistreerde spelers</div>
   <p> {{data[1].aantal_spelers}}</p>
   <div>De top 5 meest gebruikte API's</div>
-  <li *ngFor="let data of data[2]">
-    {{ data.api }} {{data.aantal}}
-  </li>
+  <app-graph [apis]="data[2]"></app-graph>
 </div>
 
 
