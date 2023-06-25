@@ -22,7 +22,7 @@ export class GetdataComponent implements OnInit {
     this.backendService.getData().subscribe(
       (data) => {
         this.data = data
-        this.data[2][0]['api'] = 'overig'
+        this.data[2][0]['api'] = 'geen API'
       },
       (error) => {
         this.router.navigate(['/login'])
