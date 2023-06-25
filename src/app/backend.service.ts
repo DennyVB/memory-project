@@ -17,6 +17,13 @@ export class BackendService {
     return this.http.get<any>('http://localhost:8000/api/admin/aggregate', {headers})
   }
 
+  getUsers(): Observable<any> {
+
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.get<any>('http://localhost:8000/api/admin/players', {headers})
+  }
+
 }
 
 

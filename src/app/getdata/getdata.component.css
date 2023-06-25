@@ -1,8 +1,29 @@
 @import url('https://fonts.cdnfonts.com/css/snell-roundhand');
 
+.aantal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80vw;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 5vw;
+}
 
-p{
-  margin-bottom: 120px
+.aantal1,
+.aantal2 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #4c84ff;
+  margin: 0;
 }
 
 div{
@@ -14,19 +35,9 @@ h1{
   text-align: center;
 }
 
-div.aantal{
-  display: flex;
-  justify-content: space-evenly;
-  font: 2vw 'Snell Roundhand', sans-serif;
-}
-
-div.graph{
-  display: flex;
-  justify-content: center;
-}
-app-graph{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .aantal {
+    width: 40vw;
+    font-size: 1.5vw;
+  }
 }

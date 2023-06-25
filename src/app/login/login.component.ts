@@ -19,22 +19,23 @@ export class LoginComponent {
     this.password = ''
   }
 
+  showErrorMessage: boolean = false;
+
   login() {
     this.getTokenService.login(this.username, this.password).subscribe(
       (data) => {
         this.data = data;
-        console.log(data)
 
         if (this.data.hasOwnProperty('token')) {
           localStorage.setItem('token', this.data.token)
           console.log('Login successful');
           this.router.navigate(['/info'])
         }
-        else {
-          console.log('Login failed');
-        }
-
-      }
+      },
+    (error) => {
+      console.log('Wrong credentials');
+      this.showErrorMessage = true;
+    }
     )
 
   }

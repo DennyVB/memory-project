@@ -8,6 +8,8 @@ import { HttpClientModule} from "@angular/common/http";
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { GraphComponent } from './graph/graph.component';
+import { ErrorMessageComponent } from './error-message/error-message.component';
+import { UserTableComponent } from './user-table/user-table.component';
 
 
 
@@ -17,6 +19,8 @@ import { GraphComponent } from './graph/graph.component';
     GetdataComponent,
     LoginComponent,
     GraphComponent,
+    ErrorMessageComponent,
+    UserTableComponent,
   ],
   imports: [
     BrowserModule,

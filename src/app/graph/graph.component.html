@@ -1,9 +1,11 @@
-<div class="graph">
-  <div class="bar" *ngFor="let item of apis" [style.height.vw]="item.aantal * 4">
-    {{item.aantal}}
+<div class="graph-container">
+  <div class="graph">
+    <div class="bar" *ngFor="let item of apis" [style.height]="getBarHeight(item.aantal)">
+      {{ item.aantal }}
+    </div>
   </div>
 
-</div>
-<div class="aantal">
-  <div class="block" *ngFor="let item of apis">{{item.api}}</div>
+  <div class="aantal">
+    <div class="block" *ngFor="let item of apis">{{ item.api }}</div>
+  </div>
 </div>

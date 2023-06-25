@@ -1,6 +1,7 @@
-<h1>Login</h1>
 <div class="container">
 <form (submit)="login()">
+  <app-error-message *ngIf="showErrorMessage"></app-error-message>
+  <h1>Login</h1>
   <div>
     <label for="username">Username:</label>
     <input type="text" id="username" [(ngModel)]="username" name="username" required>
