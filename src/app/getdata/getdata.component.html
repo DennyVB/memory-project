@@ -1,9 +1,12 @@
-<div *ngIf="data">
-  <div class="aantal">Aantal potjes gespeeld</div>
+<div class="data" *ngIf="data">
+  <div class="aantal">
+  <div class="aantal1">Aantal potjes gespeeld</div>
   <p>{{data[0].aantal_spellen}}</p>
-  <div class ="aantal">Aantal geregistreerde spelers</div>
+  <div class ="aantal2">Aantal geregistreerde spelers</div>
   <p> {{data[1].aantal_spelers}}</p>
-  <div>De top 5 meest gebruikte API's</div>
+  </div>
+
+  <h1 class="graph">De top 5 meest gebruikte API's</h1>
   <app-graph [apis]="data[2]"></app-graph>
 </div>
 

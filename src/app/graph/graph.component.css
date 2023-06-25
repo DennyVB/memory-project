@@ -1,8 +1,9 @@
 .graph {
-  width: 20vw;
-  height: 30vw;
+  width: 40vw;
+  height: 25vw;
   border: 1px solid #ccc;
   display: flex;
+  justify-content: center;
   align-items: flex-end;
   padding: 1vw;
 }
@@ -17,7 +18,7 @@
   transition: height 0.3s;
 }
 .aantal {
-  width: 20vw;
+  width: 40vw;
   height: 2vw;
   border: 1px solid #ccc;
   display: flex;

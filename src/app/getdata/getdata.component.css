@@ -1,7 +1,32 @@
+@import url('https://fonts.cdnfonts.com/css/snell-roundhand');
+
+
 p{
   margin-bottom: 120px
 }
 
 div{
-  margin-bottom: 40px
+  margin-bottom: 5vw;
+
+}
+
+h1{
+  text-align: center;
+}
+
+div.aantal{
+  display: flex;
+  justify-content: space-evenly;
+  font: 2vw 'Snell Roundhand', sans-serif;
+}
+
+div.graph{
+  display: flex;
+  justify-content: center;
+}
+app-graph{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
